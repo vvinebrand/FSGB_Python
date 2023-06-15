@@ -1,5 +1,14 @@
 # 1. Найдите сумму цифр трехзначного числа.
 def f_task():
+    num = int(input('Введите трехначное число: '))
+    if 999 > num > 100:
+        units = num % 10
+        num = num // 10
+        dozens = num % 10
+        num = num // 10
+        print(f'Сумма цифр трехзначного чисра равна {units+dozens+num}')
+    else:
+        print('Вы ввели не трехзначное число!')
 
 
 def sec_task():
